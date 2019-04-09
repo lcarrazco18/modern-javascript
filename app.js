@@ -1,6 +1,8 @@
 const firstName = 'William';
 const lastName = 'Johnson';
 const age = 38;
+const str = 'Hello there my name is Luis';
+const tags = 'web design,web development,programming';
 
 let val;
 
@@ -36,6 +38,24 @@ val = firstName.lastIndexOf('l');
 
 // CharAt()
 val = firstName.charAt('2');
+// Get last char
+val = firstName.charAt(firstName.length -1);
+
+// substring()
+val = firstName.substring(0, 4);
+// slice()
+val = firstName.slice(0,4);
+val = firstName.slice(-3);
+
+// split()
+val = str.split(' ');
+val = tags.split(',');
+
+// replace()
+val = str.replace('Luis', 'Jack');
+
+// includes()
+val = str.includes('Foo')
 
 
 console.log(val);
