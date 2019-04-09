@@ -1,26 +1,41 @@
-const num1 = 100;
-const num2 = 50;
+const firstName = 'William';
+const lastName = 'Johnson';
+const age = 38;
 
-// Simple math with numbers
-val = num1 + num2;
-val = num1 * num2;
-val = num1 - num2;
-val = num1 / num2;
-val = num1 % num2;
+let val;
 
-// Math Object
-val = Math.PI;
-val = Math.E;
-val = Math.round(2.8);
-val = Math.ceil(2.4);
-val = Math.floor(2.8);
-val = Math.sqrt(64);
-val = Math.abs(-3);
-val = Math.pow(8, 2);
-val = Math.min(2, 64, 63, 11, 5);
-val = Math.max(2, 59, 493, 5843, 592, 431);
-val = Math.random();
+val = firstName + lastName;
 
-val = Math.floor(Math.random() * 20 + 1);
+// Concatenation
+val = firstName + ' ' + lastName;
+
+// Append
+val = 'Luis ';
+val += 'Carrazco';
+
+val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+
+// Escaping
+val = 'That\'s awesome, I can\'t wait';
+
+// Length
+val = firstName.length;
+
+// Concat
+val = firstName.concat(' ', lastName);
+
+// Change case
+val = firstName.toUpperCase();
+val = firstName.toLowerCase();
+
+val = firstName[2];
+
+// indexOf()
+val = firstName.indexOf('2');
+val = firstName.lastIndexOf('l');
+
+// CharAt()
+val = firstName.charAt('2');
+
 
 console.log(val);
