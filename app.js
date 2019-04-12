@@ -4,7 +4,7 @@
 //     do something else
 // }
 
-const id = '300';
+const id = 100;
 
 // // Equal to
 // if(id == 100){
@@ -47,10 +47,38 @@ const id = '300';
 
 const color = 'yellow';
 
-if(color == 'red'){
-    console.log('Color is red');
-} else if(color === 'blue'){
-    console.log('Color is blue');
+// if(color == 'red'){
+//     console.log('Color is red');
+// } else if(color === 'blue'){
+//     console.log('Color is blue');
+// } else {
+//     console.log('Color is not red or blue');
+// }
+
+const name = 'Steve';
+const age = 25;
+
+// And &&
+if(age > 0 && age < 12){
+    console.log(`${name} is a child`);
+} else if(age >= 13 && age <= 19){
+    console.log(`${name} is a teenager`);
 } else {
-    console.log('Color is not red or blue');
+    console.log(`${name} is an adult`)
 }
+
+// OR ||
+if(age < 16 || age > 65){
+    console.log(`${name} can not run in race`)
+} else {
+    console.log(`${name} is registered for the race`)
+}
+
+// Ternary Operator
+console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+
+// Without Braces
+if(id === 100)
+    console.log('CORRECT');
+else
+    console.log('INCORRECT');
