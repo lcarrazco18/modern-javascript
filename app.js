@@ -1,26 +1,56 @@
-let val;
+// if(something){
+//     do something
+// } else {
+//     do something else
+// }
 
-const today = new Date();
-let birthday = new Date('9-10-1981 11:25:00');
-birthday = new Date('September 10 1981');
-birthday = new Date('9/10/1981');
+const id = '300';
 
-val = today.getMonth();
-val = today.getDate();
-val = today.getDay();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-val = today.getSeconds();
-val = today.getMilliseconds();
-val = today.getTime();
+// // Equal to
+// if(id == 100){
+//     console.log('CORRECT');
+// } else {
+//     console.log('INCORRECT')
+// }
 
-birthday.setMonth(2);
-birthday.setDate(12);
-birthday.setFullYear(1985);
-birthday.setHours(3);
-birthday.setMinutes(30);
-birthday.setSeconds(25);
+// // Not Equal to
+
+// if(id != 101){
+//     console.log('CORRECT');
+// } else {
+//     console.log('INCORRECT')
+// }
 
 
-console.log(birthday);
+// // Not Equal to Value & Type
+// if(id !== 100){
+//     console.log('CORRECT');
+// } else {
+//     console.log('INCORRECT')
+// }
+
+// Test if undefined
+// if(typeof id !== 'undefined'){
+//     console.log(`The ID is ${id}`);
+// } else {
+//     console.log('NO ID');
+// }
+
+// Greater or Less Than
+// if(id <= 100){
+//     console.log('CORRECT');
+// } else {
+//     console.log('INCORRECT');
+// }
+
+// IF ELSE
+
+const color = 'yellow';
+
+if(color == 'red'){
+    console.log('Color is red');
+} else if(color === 'blue'){
+    console.log('Color is blue');
+} else {
+    console.log('Color is not red or blue');
+}
