@@ -1,29 +1,21 @@
-// Create element
-const li = document.createElement('li');
+// Replace Element
 
-// Add class
-li.className = 'collection-item';
-
+// Create Element
+const newHeading = document.createElement('h2');
 // Add id
-li.id = 'new-item';
+newHeading.id = 
+'task-title';
+// New text node
+newHeading.appendChild(document.createTextNode('Task List'));
 
-// Add attribute
-li.setAttribute('title', 'New Item');
+// Get the old heading
+const oldHeading = document.getElementById('task-title');
+// Parent
+const cardAdction = document.querySelector('.card-action'
+);
+//Replace
+cardAdction.replaceChild(newHeading, oldHeading)
+;
+console.log(newHeading);
 
-// Create text node and append
-li.appendChild(document.createTextNode('Hello World'));
-
-// Create new link element
-const link = document.createElement('a');
-// Add class
-link.className = 'delete-item secondary-content';
-// Add icon html
-link.innerHtml = '<i class="fas fa-times"></i>';
-
-// Append link into li
-li.appendChild(link);
-
-// Append li as child to ul
-document.querySelector('ul.collection').appendChild(li);
-
-console.log(li);
+// Remove Element
