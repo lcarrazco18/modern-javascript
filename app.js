@@ -16,6 +16,13 @@ const cardAdction = document.querySelector('.card-action'
 //Replace
 cardAdction.replaceChild(newHeading, oldHeading)
 ;
-console.log(newHeading);
-
 // Remove Element
+
+const lis = document.querySelectorAll('li');
+const list = document.querySelector('ul');
+// Remove list item
+lis[0].remove();
+
+// Remove child element
+list.removeChild(list[3]);
+
