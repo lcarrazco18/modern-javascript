@@ -1,32 +1,44 @@
-// Mouse events
+const form = document.querySelector("form");
+const taskInput = document.getElementById("task");
+const heading = document.querySelector("h5");
+const select = document.querySelector('select');
 
-const clearBtn = document.querySelector('.clear-tasks');
-const card = document.querySelector('.card');
-const heading = document.querySelector('h5');
+// Clear input
+taskInput.value = "";
 
-// Click
-// clearBtn.addEventListener('click', runEvent);
-// Doubleclick
-// clearBtn.addEventListener('dblclick', runEvent);
-// Mousedown
-// clearBtn.addEventListener('mousedown', runEvent);
-// clearBtn.addEventListener('mouseup', runEvent);
-// Mouseenter
-// card.addEventListener('mouseenter', runEvent);
-// Mouseleave
-// card.addEventListener('mouseleave', runEvent);
-// Mouseover
-// card.addEventListener('mouseover', runEvent);
-// Mouseout
-// card.addEventListener('mouseout', runEvent);
-// Mousemove
-// card.addEventListener('mousemove', runEvent);
+// form.addEventListener('submit', runEvent);
 
-// Event Handler
-// function runEvent(e) {
-//     console.log(`EVENT TYPE: ${e.type}`);
+// Keydown
+// taskInput.addEventListener('keydown', runEvent);
 
-//     heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+// Keyup
+// taskInput.addEventListener("keyup", runEvent);
+// Keypress
+//taskInput.addEventListener('keypress', runEvent);
+// Focus
+// taskInput.addEventListener('focus', runEvent);
+// Blur
+// taskInput.addEventListener('blur', runEvent);
+// Cut
+//taskInput.addEventListener('cut', runEvent);
+// Paste
+//taskInput.addEventListener('paste', runEvent);
+// Input
+//taskInput.addEventListener('input', runEvent);
+// Change
+select.addEventListener('change', runEvent);
 
-//     document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 60)`;
-// }
+
+
+function runEvent(e) {
+  console.log(`EVENT TYPE: ${e.type}`);
+
+  console.log(e.target.value);
+
+  // heading.innerText = e.target.value;
+
+  // Get input value
+  // console.log(taskInput.value);
+
+  // e.preventDefault();
+}
